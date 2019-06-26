@@ -176,12 +176,14 @@
     <metadata connector="FLOW" name="tExtractDelimitedFields_1">
       <column comment="" key="false" length="-1" name="a" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="b" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="-1" name="a" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="b" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="224">
@@ -202,6 +204,10 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="b"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -209,6 +215,8 @@
     <metadata connector="FLOW" name="tLogRow_1">
       <column comment="" key="false" length="-1" name="a" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="b" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="REJECT" label="row2" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tExtractDelimitedFields_1">
@@ -224,13 +232,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9d39e7b8-728b-4d9d-bbf4-a228d854652f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UfhqnA8WyfmbkfbgAOeId65UJ/EPAGzgDOfcplL0AffmE5w1OFXCnIEqs95tduvUyYieCz2WKGW8
-JHF7uLTW/w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0b3d4470-a3de-4793-b6d0-7840e7586303"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Fi5MOL2iozCGoBqDuMbizkNn9H5DFh7ugs8m6HkqouZD/7nTKpEHF05OEz+cpDYNykxyCg3zqOiB
-nc+C3H3Xrg==</DigestValue></Reference></SignedInfo><SignatureValue>gFxxbVYV+ZwB0snW6U5Sk9Yu0t1tRgVlXQzvNOkZGJ7+lSEZWufmXLvKbhn3Byt2SMdt5ET7ljzf
-LnJvgcqvkS8iLZWHaVaJK/IVlYnsfdGxXXXLXD0lPlpoETBre5CvWrimWb6FhJPPT1Pn07Zcoe16
-D77f4Gf+4RI8JVHL018FdIgWJgUkfo/qJltkOvTXOVatz9kuEUbhMnTRQTIMWtvAI6LqkEk3VC9o
-7ZAYbb/HMFvhcuFBdI05tU0bUq5NqMeWwy21TatithcZpWyS69zSY24oBxTij3MKKyhu5eJOFD1u
-rq7yAT+irv7bVpHUHTJtKaKZetkwzjrlRdnH3w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e3b40188-6e20-4507-afc2-f79fc0b0c6b7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GXgzmozyrVA1JB2aTz+iJoL7pk53dJXxIjpceQI1NLYnCw7UvknAjRDEQVI3HJ24MsoKuwscMe3V
+YifMKFbrhA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b56c7eb6-4dd4-4895-861a-ce020ef2df1e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1Qa5Ctl5ozKP6rSa2ZR0uMQ9AY+rTVPD9N0qhBefwX6t2SFZcT3hbfuABUqU9U5GEuyyZ8P/DNmK
+YBZA8pZrbA==</DigestValue></Reference></SignedInfo><SignatureValue>M5Wz4XcaWijJO7mX5zq4pA9Z7bXzAo7N4HsRIhfskjfbKpg7UgD9kT+zTKVdOWezgjU41TuEiveQ
+CPsTRCCaTcbBqJlzoatJwF/hWoXmjRnU9ecJHH5J5GltLS+UhWfXcZr0Xw6vqbJ+57ZoO7zjz9B5
+LBv9QdJaq0tyoroBAJqBZoY+LsjURAhbrGQ/MKhuyUko0UtMHakBjkCuVLDe+kjwu4DiebuQtVL5
+t1+WXb5U15GxtPzauH4yNZDgzjrfIxtPfWMFoghmd6Y24u6u/mQJqxtMJX08Nonob9iwvvTMuVOY
+cpyUAOD6yf1bK8KwxdRc4uPTy8Um9BX6BA/U0w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -254,4 +262,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0b3d4470-a3de-4793-b6d0-7840e7586303" Target="#_9d39e7b8-728b-4d9d-bbf4-a228d854652f"><Timestamp>2019-06-26 07:10:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b56c7eb6-4dd4-4895-861a-ce020ef2df1e" Target="#_e3b40188-6e20-4507-afc2-f79fc0b0c6b7"><Timestamp>2019-06-26 07:11:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
