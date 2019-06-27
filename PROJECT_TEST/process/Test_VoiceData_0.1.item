@@ -306,7 +306,7 @@
       <column comment="" key="false" length="791" name="CAU" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.newColumn " name="CCS_PREPAID" nullable="true" type="id_String"/>
@@ -320,16 +320,16 @@
         <mapperTableEntries expression="row2.newColumn8.replaceAll(&quot;CLI=&quot;, &quot;&quot;) " name="CLI" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.newColumn9.replaceAll(&quot;SK=&quot;, &quot;&quot;) " name="SK" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.newColumn10.replaceAll(&quot;TCS=&quot;, &quot;&quot;) " name="TCS" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.newColumn11 " name="LPN" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.newColumn12 " name="LAC" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.newColumn13 " name="CS" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.newColumn14 " name="CPC" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.newColumn15 " name="CC" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.newColumn16 " name="CPNI" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.newColumn17 " name="PCNA" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.newColumn18 " name="TPNI" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.newColumn19 " name="PTNA" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.newColumn20 " name="CGNA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.newColumn11.replaceAll(&quot;LPN=&quot;, &quot;&quot;) " name="LPN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.newColumn12.replaceAll(&quot;LAC=&quot;, &quot;&quot;) " name="LAC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.newColumn13.replaceAll(&quot;CS=&quot;, &quot;&quot;) " name="CS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.newColumn14.replaceAll(&quot;CPC=&quot;, &quot;&quot;) " name="CPC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.newColumn15.replaceAll(&quot;CC=&quot;, &quot;&quot;) " name="CC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.newColumn16.replaceAll(&quot;CPNI=&quot;, &quot;&quot;) " name="CPNI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.newColumn17.replaceAll(&quot;PCNA=&quot;, &quot;&quot;) " name="PCNA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.newColumn18.replaceAll(&quot;TPNI=&quot;, &quot;&quot;) " name="TPNI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.newColumn19.replaceAll(&quot;PTNA=&quot;, &quot;&quot;) " name="PTNA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.newColumn20.replaceAll(&quot;CGNA=&quot;, &quot;&quot;) " name="CGNA" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.newColumn21 " name="TGNA" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.newColumn22 " name="TFN" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.newColumn23 " name="LGID" nullable="true" type="id_String"/>
@@ -532,13 +532,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2409502a-6ab6-480e-8d6a-d3a483831428"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>26ZQ5R+eMsBf1bJGXud/BT4OPJaXr/eP1gfEk1vT45Z3b00a0ZDqIXQsvmWRqJBFckKFEeGDQCDK
-XtgyVBaWxQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a5cf8de7-3f5d-4027-92a9-c18ba166640d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I3JjLHC5OdlKV1ov8OePM+GY0oBK8epM0/BKJIf9aveSTcv2zSzXbu+qMEnk0346WrnW1MnGs/3R
-FS8RPfBdnw==</DigestValue></Reference></SignedInfo><SignatureValue>k1VYHEfB2Gg0NRzR2SgANDRALD8lwB4pWkffVGxOIFI12dOYWC+NWiPHUNRb2wGFSKR7NBvLgwp3
-BOmePMDRjLIgSL8b6F2gP6UZQ6dQa8w1eRsrdrTVQ63mMWy+eytSPsY2KnidUxQwGbhxmEwMtBzQ
-znz5g0tVO1mwkSFGLw8Jc/YGbnXQGknkYL2WmTbWoCkvCAHLEEHFFoKHh1/m9JIgKwMtQMgWd4Lz
-TZAPaeNkajRUrDEtTJaCovjH4HbGtCwqf3L7/DW+GdinGru+GRBdnyja4eSl6+won93yZk8XxKcZ
-Pg/VYn54gFCPdYWyvse0HXtnAY9FZ8iTjKx6ig==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9872989d-62fb-4abf-bb43-5f49d01c6046"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hiMKD4I7JwRAe0B2IRuQofnLzapkH4grzIQyE5gikwwzm8ehhurkolKitc53MRnmeA9FBxzxa6qr
+543Aa28duA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_17751546-58ed-4919-9733-9eb72822c510"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yq+oP61UkTNtqinyTtXs2KPZe250mmCUu3c1E11phxFyL4d0FTw/Xr+PG99+t7X69hmQQp6gmbMV
+kXwPoFFZQQ==</DigestValue></Reference></SignedInfo><SignatureValue>KDxIN0LS5yfG5glPjlbJPL6jmMEWkyd3zYd/mTLxTg5IN812blRFVnDOQNjRwVkTJC87vJTD7nV0
+hu212Tl9beZjMz0gcQyCw5A51ItLDSaZmd1Uxx3SLhhntKbDfAlV/yNkB5wrDGrtbnpwu5UCcBZi
+lYhe46dIVldWiECGrNB1mpeM/N6J+DJrasZ4c4HMH/oHi1mtasnE4Py5r/XGm26OOS+07ZljJVBT
+CWYZkj3O9GPBjZDGjzCDVbWsQtjiPNyf7ITRBYQaZ/kpIKB8RuO0nbFuLnJm/DhL7/7l0acM2ybO
+XCuvH3a+HjhNMW/4n1A2Y1DvNPYgxnfdwhkbGA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -562,4 +562,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a5cf8de7-3f5d-4027-92a9-c18ba166640d" Target="#_2409502a-6ab6-480e-8d6a-d3a483831428"><Timestamp>2019-06-27 07:31:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_17751546-58ed-4919-9733-9eb72822c510" Target="#_9872989d-62fb-4abf-bb43-5f49d01c6046"><Timestamp>2019-06-27 07:37:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
