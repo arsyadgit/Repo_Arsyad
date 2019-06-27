@@ -537,27 +537,27 @@
         <mapperTableEntries expression="out1.CCTS " name="CCTS" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out1.HTS " name="HTS" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out1.AIDL " name="AIDL" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.CAU.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="CAU" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_CALLED_ADDR.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_CALLED_ADDR" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_CALLED_TYPE.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_CALLED_TYPE" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_CALLID.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_CALLID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_CALLING_ADDR.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_CALLING_ADDR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CAU.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="CAU" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_CALLED_ADDR.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_CALLED_ADDR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_CALLED_TYPE.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_CALLED_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_CALLID.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_CALLID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_CALLING_ADDR.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_CALLING_ADDR" nullable="true" type="id_String"/>
         <mapperTableEntries expression="out1.DIA_IMEI.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_IMEI" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_NCC_HOST.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_NCC_HOST" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_OCGI.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_OCGI" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_ORIG_DIGIT.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_ORIG_DIGIT" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_RCODE.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_RCODE" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_SID.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_SID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_SK.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_SK" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_START_TIME.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_START_TIME" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_SUBSC_ID.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_SUBSC_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_SVCID.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_SVCID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_USED_TIME.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_USED_TIME" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.DIA_VLRID.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="DIA_VLRID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.FCA.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="FCA" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.MSC.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="MSC" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.VLR.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="VLR" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="out1.WALR.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="WALR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_NCC_HOST.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_NCC_HOST" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_OCGI.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_OCGI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_ORIG_DIGIT.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_ORIG_DIGIT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_RCODE.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_RCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_SID.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_SID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_SK.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_SK" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_START_TIME.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_START_TIME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_SUBSC_ID.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_SUBSC_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_SVCID.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_SVCID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_USED_TIME.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_USED_TIME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_VLRID.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="DIA_VLRID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.FCA.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="FCA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.MSC.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="MSC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.VLR.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="VLR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.WALR.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;-&quot;) " name="WALR" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries name="CCS_PREPAID" nullable="true" type="id_String"/>
@@ -829,13 +829,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_98163169-c16c-46e2-a3b7-5ba25e838ac0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HHgUsrHHFKORLo50AZQZMqlq+qX3iq07OQ8ywlTE4Hxr2G772m+P049Rs5ZR2LOhWPbOMEMbKsX/
-/UF26ExR6w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_20bebca2-79f8-4195-a07f-4747303c4b22"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xmsaTXLTWs9pFiddQHXIeO0Vl0VgmQcbDSzkfUAZkUR6alXQKU7mCPe0k+M6XCZZzs1UbuGYz2Cw
-LJe0uoVa7w==</DigestValue></Reference></SignedInfo><SignatureValue>zky2UvPyZUk4OJ6boG86W9QeFXnDCKolsM40P0kZaJA0ws1J7NEHdY+YHTWazUfYIchzamK4Z+GA
-lv6x5nQZAiX7vsziFzH+vELW1DzO23Lum6RyB8vgZnXxmApO1T9srFkUAO0Togw7eWVHRAbAFSBD
-YsGn3wF+zs7AoyMkwF/mf5F7Z4ixnK6rJj85d+IPBjJCcYQh0dneln6yWPbHNMpNRdTG9vak9Wxm
-3aWterR0NkYFtCrVmYuWEZXaNlcn+J/wKxGn9j2zfqYxh5dkH4U6gM4WpXfGAxPsJPPeNC0B/XM/
-kBU5J+KXxLDef8M+xIuSgZbtRz99g+fS3GbFwg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1cda5df9-534a-4980-858d-b88c9fd5d620"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Gc7tquzb2IwG/Kn1FxeYnPDnO/gsQPCEHAmysgPYztJW7c2TyvqpMhYdY3R9+LcDkCj8WuQQEIsq
+tnTwUjQEUw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cbce8fb5-e10b-495c-a20e-8eaedeeb7fc2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cBRkmicM+c/L03wT5sMwl44YLmfeev2K2SwBRnHOsHqJWgWLW6hpkNS62y5/IrmL/886lCt9xTKi
+vPkRTksv2Q==</DigestValue></Reference></SignedInfo><SignatureValue>1fbshVBU5QAMIUe10nkqFLq4OjW+GZttA3GrtD+p9odrk1GwVnJrpO1r59ZMt+ialNsHq5QJRZBi
+7+3LvXp35XU9DZFk+ClvIoAUIdQMY7OTRv9nN9K34w0/2WsPGKhInMcAcdlEiAI8aePSDnw3tL2n
+IH9tMwlYFxuFbFKl8tPKHa17AEHGPQWuD1OBqXhHwImR3B8ZUwSKGNyrA4Q6gNS7Ef76HZ2h+yRm
+og1dQJMCAIrV17c8lSMEJha1j4r8ZCy/skuTniFADnF0kbwjhfD+/F/nCNAbTnQy7qL7OXxajIGN
+DluauTVGvPk/4XeFIGvZ8mTTN2xXYefIqVkvSw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -859,4 +859,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_20bebca2-79f8-4195-a07f-4747303c4b22" Target="#_98163169-c16c-46e2-a3b7-5ba25e838ac0"><Timestamp>2019-06-27 09:43:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cbce8fb5-e10b-495c-a20e-8eaedeeb7fc2" Target="#_1cda5df9-534a-4980-858d-b88c9fd5d620"><Timestamp>2019-06-27 09:45:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
