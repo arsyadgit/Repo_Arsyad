@@ -305,6 +305,7 @@
       <column comment="" key="false" length="-1" name="FATS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CCTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="HTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="b" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties/>
@@ -344,6 +345,7 @@
         <mapperTableEntries expression="row2.newColumn31 " name="FATS" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.newColumn32 " name="CCTS" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.newColumn33 " name="HTS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.b.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;,&quot;&quot;) " name="b" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="newColumn" nullable="true" type="id_String"/>
@@ -466,6 +468,8 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="HTS"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="b"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -505,6 +509,7 @@
       <column comment="" key="false" length="-1" name="FATS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CCTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="HTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="b" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tExtractDelimitedFields_1">
@@ -516,6 +521,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="b"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
@@ -524,13 +534,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_07ab9826-d84c-4adc-a130-1bc5e3749037"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ygJSDK/Ju+AuwQZ6fgNrvnU7FgmxmAZvA+D0i40FoOH+2HqqgjiEswbabmV0PrMVx/E/5vOfuop+
-h2BkT799/A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_547f1429-9ba2-4825-8458-a28221d547cd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0Qipk8Ax3RekQlAx38K/nJltkURS3+pE3bx1ol0BmZn1nMSZIOfE2qA39Qm6G/uLiJSTSLgjB+tb
-qqO/436XmA==</DigestValue></Reference></SignedInfo><SignatureValue>MpeF6tpo1d6MYGnf6HZiGW3WCrFjXT93hTgFbD9X44x6ceOJUQ8tNh2/d17zkV9HUgUtwFfhcOR/
-gmDu6uw8Y8EtysbTmRlCUELCUpT4qkwHtM6zmcdcddmUQ59hXe6stCAvcF34inEuH30dzXJc5bLP
-xUBL/gcZQcIkU2jBNO13Va4K3VCvUDUU7CYWFSRhAYG7I7WGE4QfRD3thf6t98eko5iA0UgrXtt9
-W79IkTGS/edtesZaARE8jYNOVGuhUGZRw/ktP4FBULF/blcO9sFdwHj91oIhevKqdhlmqMpVXByw
-aH0kE4rj5rHFIwYBrlMjzpI05UgbNNheHMSjjw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f8e7764a-0865-4639-899a-8be6bd3431b9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HEqi93x5nusmXoWud/slchGNA3lqn139o0peSzdZ/5WF3ooLRaG3FbdiUJ2SIasdtUCTWtJpcSsf
+i26dV7vp/Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_474a2b2f-0fe4-49e8-9678-1547bd4c9c0a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uUZRed5Dv7skOT/r54Fj240RtI/ytwUXj490KPFLdOTagHYcavoWbNfKOCbnr62lAg7zjO2d+40X
+98s8oZrfrA==</DigestValue></Reference></SignedInfo><SignatureValue>1MWbjUGu59Q4OztQ6SG+Y3ZGWo6Fk9JlkHhc3abOVMpvrhc/dFGPXO8KHRA/HWA4iAhbtNDxqvMh
+g0PwWdOtk6sLyiGpdRHYIRgv0U4jM0zKSAsc/FP73NmFpuPpZbucuCcVb8I8LhGj1bLFU2rr/7/4
+AwkrgISmk7KGidUzrgPz9zfKuWag2/NqE119iPezcmIsbtdbKE0JhIffVDb3megqHdz9xBfKBPP3
+9kj0paUu9uMrnUugLFBZ06EsHlQyfnvsBSaCNxf0lTNjh2yNPa3idRw/Ar5hYMTiYAkYVeYUeIGF
+lGl9zi7a/nUf7ZyqTZIvDVkAb3e3uMVpYR2rlg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -554,4 +564,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_547f1429-9ba2-4825-8458-a28221d547cd" Target="#_07ab9826-d84c-4adc-a130-1bc5e3749037"><Timestamp>2019-06-27 07:14:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_474a2b2f-0fe4-49e8-9678-1547bd4c9c0a" Target="#_f8e7764a-0865-4639-899a-8be6bd3431b9"><Timestamp>2019-06-27 07:16:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
