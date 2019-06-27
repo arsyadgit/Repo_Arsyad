@@ -426,19 +426,212 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_7KggIJfKEemR7MkqYeu0aQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" key="false" length="-1" name="CCS_PREPAID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OTI" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CUST" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CGN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CLI" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TCS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LPN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LAC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CPC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CC" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CPNI" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PCNA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TPNI" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PTNA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CGNA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TGNA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TFN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LGID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CPN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OCPI" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CPNN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CGNN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CPPI" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NOAT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CBAT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FATS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CCTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="AIDL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="CAU" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_CALLED_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_CALLED_TYPE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_CALLID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_CALLING_ADDR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_IMEI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_NCC_HOST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_OCGI" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_ORIG_DIGIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_RCODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_SID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_SK" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_START_TIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_SUBSC_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_SVCID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_USED_TIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="DIA_VLRID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="FCA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="MSC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="VLR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="791" name="WALR" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="out2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="out1.CCS_PREPAID " name="CCS_PREPAID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CID " name="CID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.OA " name="OA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.OTI " name="OTI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CUST " name="CUST" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.SN " name="SN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.TN " name="TN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CGN " name="CGN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CLI " name="CLI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.SK " name="SK" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.TCS " name="TCS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.LPN " name="LPN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.LAC " name="LAC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CS " name="CS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CPC " name="CPC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CC " name="CC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CPNI " name="CPNI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.PCNA " name="PCNA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.TPNI " name="TPNI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.PTNA " name="PTNA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CGNA " name="CGNA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.TGNA " name="TGNA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.TFN " name="TFN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.LGID " name="LGID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CPN " name="CPN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.OCPI " name="OCPI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CPNN " name="CPNN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CGNN " name="CGNN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CPPI " name="CPPI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.NOAT " name="NOAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CBAT " name="CBAT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.FATS " name="FATS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CCTS " name="CCTS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.HTS " name="HTS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.AIDL " name="AIDL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.CAU.replaceAll(&quot;.*CAU=.*|MSC=.*&quot;, &quot;&quot;) " name="CAU" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_CALLED_ADDR " name="DIA_CALLED_ADDR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_CALLED_TYPE " name="DIA_CALLED_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_CALLID " name="DIA_CALLID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_CALLING_ADDR " name="DIA_CALLING_ADDR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_IMEI " name="DIA_IMEI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_NCC_HOST " name="DIA_NCC_HOST" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_OCGI " name="DIA_OCGI" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_ORIG_DIGIT " name="DIA_ORIG_DIGIT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_RCODE " name="DIA_RCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_SID " name="DIA_SID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_SK " name="DIA_SK" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_START_TIME " name="DIA_START_TIME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_SUBSC_ID " name="DIA_SUBSC_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_SVCID " name="DIA_SVCID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_USED_TIME " name="DIA_USED_TIME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.DIA_VLRID " name="DIA_VLRID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.FCA " name="FCA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.MSC " name="MSC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.VLR " name="VLR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="out1.WALR " name="WALR" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="CCS_PREPAID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="OA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="OTI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CUST" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CGN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CLI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SK" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TCS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LPN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LAC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CPC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CPNI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PCNA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TPNI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PTNA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CGNA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TGNA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TFN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LGID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CPN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="OCPI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CPNN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CGNN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CPPI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="NOAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CBAT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FATS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CCTS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HTS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AIDL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CAU" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_CALLED_ADDR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_CALLED_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_CALLID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_CALLING_ADDR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_IMEI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_NCC_HOST" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_OCGI" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_ORIG_DIGIT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_RCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_SID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_SK" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_START_TIME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_SUBSC_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_SVCID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_USED_TIME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DIA_VLRID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FCA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MSC" nullable="true" type="id_String"/>
+        <mapperTableEntries name="VLR" nullable="true" type="id_String"/>
+        <mapperTableEntries name="WALR" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
     <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="true"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="CCS_PREPAID"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -623,90 +816,26 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="CAU"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="AIDL"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_CALLID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_CALLED_ADDR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_CALLING_ADDR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_CALLED_TYPE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_IMEI"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_ORIG_DIGIT"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_SID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_OCGI"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_RCODE"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_NCC_HOST"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_USED_TIME"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_START_TIME"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_SK"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_SVCID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_SUBSC_ID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="DIA_VLRID"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FCA"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="WALR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="MSC"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="VLR"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2ce480b5-df9a-4266-8183-e7bc0999e570"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gAgp3vZfnCujyzE7+zayk899/xcspzQiy5wAqg2kKvuIp0KfX1neejqjcBBDTV45m/hgkRVgx/0S
-yraewmGIWQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ccd8ad82-abaa-44f0-8439-c9ab5f39ffeb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EnkPDL1JqhhS/ZBRNvC9aGF6UlLbxFBEkCTr9okBHUvDJsRSB6A3ASK7VX+aidO4Kbuwfa42QzDI
-EaUcNV/WuA==</DigestValue></Reference></SignedInfo><SignatureValue>a88WxN/8wskVkL50K4En1Fa+GoSfUVoA+jgAO3IiiufQ9IiRAlhv/RSf8VkgYABykjQgog4SNd0o
-cuXcKyQBowc7cOU/A1vfD4MOylz7hl4vj0O1MXdGpTStudLA8U+ysYZOFL3aCfUxyzQ4SpWkCpvw
-8ezoqARAqru6vwxeSwQNkxRLxEZOchLLeglWUQFMumkn87K6YLU/7BjQtc2LOV5kIDgkgPDOhRIh
-IqixPNvsa+mHhpBntqJqedVvzNMbktkxcx/Yrv6FO7IgVLOmm7UDxPGFvxcugMm4UOfGbkwbmTT5
-mgZMYe2kfnLVALunig0vY/w6rtM7725idqdCrA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4700c87b-ef2e-44b9-981c-6661cd114fb7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7dKaNR73HSzjvsQj1Od5Wv7vQao9X96lnHs0NPt9D5y3g3j7ag7NJFJ7xJx16XEe4QiT34x7jxvD
+uCV98vViIA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_043ee20f-026f-450b-ae5d-f0c6b4ddf57b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>i9C04HPIFbHBfRdQsNxje/Ydt/w7zd/8m8hKqMmBxESWbP3GDSkRZJMAN7rsA8BMaZ3prD3c4dZK
+fwgurnUHCA==</DigestValue></Reference></SignedInfo><SignatureValue>l3x9/XNoobxG91xQChL4N2xIRDxrLI4CvsUet8pCaNgGzV8/AUlJEXJ833R651qOlebVC8vrsCXX
+i4NH/QoujwZwQ/fovHYtOQgHY+PxWLQRjfVv6rMczXNn+keLY7sVUHOd1+iUF8kYkYcR0rogRqD1
+A0cfLH9ayd6nyzLxiDaRppUpTwwbrtnTkSqK9KFbrXNEUnEqrlqPfHa6kYD0Wtcx47sAFh7dcYio
+Q5MoJs/5phT2hFvU22PTVhOeNjtro81eKUBpr4UCk/yUTgvuAmuz3OJraRpz0lmYBcaJhC556Ecy
+8G27Rb2Rs0I6Vk7796ov/FbIHo+qu4Qw05pTNA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -730,4 +859,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ccd8ad82-abaa-44f0-8439-c9ab5f39ffeb" Target="#_2ce480b5-df9a-4266-8183-e7bc0999e570"><Timestamp>2019-06-27 09:32:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_043ee20f-026f-450b-ae5d-f0c6b4ddf57b" Target="#_4700c87b-ef2e-44b9-981c-6661cd114fb7"><Timestamp>2019-06-27 09:38:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
