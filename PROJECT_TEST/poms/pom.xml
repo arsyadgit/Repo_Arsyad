@@ -9,19 +9,18 @@
   <name>PROJECT_TEST Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
-    <module>code/routines</module>
-    <module>jobs/process/test_voicedata_0.1</module>
-    <module>jobs/process/test_job_0.1</module>
-    <module>jobs/process/retrieveconfigurationjob_0.1</module>
-    <module>jobs/process_mr/test_0.1</module>
     <module>jobs/process/test_bigdata_0.1</module>
+    <module>jobs/process/test_job_0.1</module>
+    <module>jobs/process/test_voicedata_0.1</module>
+    <module>jobs/process_mr/test_0.1</module>
+    <module>code/routines</module>
   </modules>
   <properties>
     <talend.project.name>PROJECT_TEST</talend.project.name>
     <encoding>UTF-8</encoding>
     <talend.version>7.1.1</talend.version>
-    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.tag>${project.version}</talend.docker.tag>
+    <maven.deploy.skip>true</maven.deploy.skip>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
