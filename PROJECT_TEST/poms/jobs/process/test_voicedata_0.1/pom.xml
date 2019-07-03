@@ -10,8 +10,8 @@
   </parent>
   <groupId>org.example.project_test.job</groupId>
   <artifactId>Test_VoiceData</artifactId>
-  <version>0.1.0</version>
-  <name>PROJECT_TEST Test_VoiceData-0.1.0 (0.1,Job Designs)</name>
+  <version>0.1.0-SNAPSHOT</version>
+  <name>PROJECT_TEST Test_VoiceData-0.1.0-SNAPSHOT (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -20,7 +20,7 @@
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>project_test</talend.project.name.lowercase>
     <talend.job.path>project_test/test_voicedata_0_1</talend.job.path>
-    <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
+    <project.distribution-management.repository.id>${project.distributionManagement.snapshotRepository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>PROJECT_TEST</talend.project.name>
     <talend.product.version>7.1.1.20181026_1147</talend.product.version>
@@ -36,7 +36,7 @@
     <talend.job.name>Test_VoiceData</talend.job.name>
     <talend.job.id>_7KggIJfKEemR7MkqYeu0aQ</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
+    <project.distribution-management.repository.url>${project.distributionManagement.snapshotRepository.url}</project.distribution-management.repository.url>
     <talend.job.framework></talend.job.framework>
     <talend.job.folder></talend.job.folder>
     <talend.job.type>Standard</talend.job.type>
